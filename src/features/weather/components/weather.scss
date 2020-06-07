@@ -1,0 +1,88 @@
+.weather {
+  .icon {
+    &.icon-cloudy {
+      background-image: url("../../../assets/images/cloudy.svg");
+    }
+    &.icon-default {
+      background-image: url("../../../assets/images/default.svg");
+    }
+    &.icon-sunny {
+      background-image: url("../../../assets/images/sunny.svg");
+    }
+    &.icon-snow {
+      background-image: url("../../../assets/images/snow.svg");
+    }
+    &.icon-rain {
+      background-image: url("../../../assets/images/rain.svg");
+    }
+    &.icon-thunderstorm {
+      background-image: url("../../../assets/images/thunderstorm.svg");
+    }
+  }
+
+  &.today {
+    margin-bottom: 50px;
+    .icon {
+      height: 100px;
+      width: 100px;
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+    }
+    .header {
+      margin-bottom: 50px;
+      .location {
+        font-size: 2.5rem;
+      }
+      .date {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      display: block;
+      width: 100%;
+    }
+    .content {
+      .description {
+        font-size: 1.5rem;
+        margin-top: -5px;
+      }
+    }
+    .temperature {
+      font-size: 11.5rem;
+      text-align: right;
+      margin-top: -42px;
+      span {
+        letter-spacing: -15px;
+      }
+    }
+
+    sup {
+      font-size: 40%;
+      top: -1.5em;
+    }
+  }
+  &.forecast {
+    font-size: 16px;
+    background-color: rgba(25, 33, 41, 0.65);
+    padding: 50px 0px;
+
+    .icon {
+      height: 70px;
+      width: 70px;
+      background-size: 70px 70px;
+      background-repeat: no-repeat;
+    }
+    :not(:first-child):not(:last-child) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .forecast .item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}

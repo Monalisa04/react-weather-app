@@ -1,0 +1,27 @@
+.app-header-fixed {
+  padding-top: 50px;
+  .app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1025;
+    border-radius: 0;
+    padding: 0px 30px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    width: 200px;
+  }
+}
+
+.navbar-brand {
+  display: inline-block;
+  float: none;
+  height: auto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 50px;
+}

@@ -1,0 +1,28 @@
+.find-location {
+  position: relative;
+  margin-bottom: 70px;
+
+  input[type="text"] {
+    width: 100%;
+    color: white;
+    padding: 20px 50px 20px 20px;
+    background: rgb(30, 32, 43);
+  }
+}
+
+#city {
+  overflow-x: hidden !important;
+}
+
+
+.rbt-input {
+  border-radius: 0;
+}
+
+.rbt-menu {
+  border-radius: 0;
+}
+
+.form-control {
+  height: 2em;
+}
