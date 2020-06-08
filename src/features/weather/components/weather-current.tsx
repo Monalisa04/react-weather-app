@@ -31,8 +31,14 @@ class WeatherCurrent extends React.Component<WeatherCurrentProps> {
 
     return (
       <div className=" row weather today">
-        <div className="col-lg-6">
+        <div className="col-lg-12">
           <div className="header">
+            {this.props.currentWeather ? (
+              <div className="temperature">
+                <span>{this.props.currentWeather.currentTemperature}</span>
+                <sup>o</sup>
+              </div>
+            ) : null}
             <div className="location">
               {`${this.props.city}, ${this.props.country}`}
             </div>
@@ -44,14 +50,6 @@ class WeatherCurrent extends React.Component<WeatherCurrentProps> {
               <div className="description">
                 {this.props.currentWeather.description}
               </div>
-            </div>
-          ) : null}
-        </div>
-        <div className="col-lg-6 align-text-top">
-          {this.props.currentWeather ? (
-            <div className="temperature">
-              <span>{this.props.currentWeather.currentTemperature}</span>
-              <sup>o</sup>
             </div>
           ) : null}
         </div>

@@ -7,7 +7,7 @@ const Navbar = (props: any) => {
     <div className="app-header-fixed">
       <nav className="app-header navbar box-shadow bg-dark">
         <span className="navbar-header text-white">
-          <Link to="/">WEATHER APP</Link>
+          <Link to="/">STARLIGHT</Link>
         </span>
         <Search />
       </nav>
