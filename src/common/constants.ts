@@ -1,4 +1,4 @@
-export const GEOCODER_API_KEY = "AIzaSyDDvjBedrhLf0rt62ckhs2fwWxtELcYeU8";
+export const GEOCODER_API_KEY = "<API_KEY>";
 
 export const CURRENT_WEATHER_API_URL =
   "https://3h7zbe2di9.execute-api.us-east-2.amazonaws.com/dev/current-weather";
